@@ -7,7 +7,7 @@ class NewVisitorTest(unittest.TestCase):
         self.browser = webdriver.Firefox()
 
     def tearDown(self):
-        self.browser.get('http://localhost:8000')
+        self.browser.quit()
 
     def test_can_start_a_new_list_and_retrieve_it_later(self):
         # Edith hs a heard about a cool new online to-do app.
